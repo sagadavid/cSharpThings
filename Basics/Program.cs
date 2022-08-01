@@ -1,6 +1,15 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-Console.WriteLine("\n ***** Console at Main :");
+using Basics;
+
+Console.WriteLine("--praks -10 random ");
+// RandomSpeech.RandomizeMethod();
+
+Console.WriteLine("--praks -9 conversions");
+// Konvert.ConversionMethod();
+
+Console.WriteLine("--praks -8 class property");
+// Person.PersonProperty();
 
 Console.WriteLine("--praks -7");
 // Console.WriteLine("{0}:{1}", byte.MaxValue, byte.MinValue); //255:0
