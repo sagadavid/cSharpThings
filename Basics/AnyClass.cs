@@ -1,15 +1,15 @@
 using System.Threading.Channels;
 
-namespace BasicPractices;
+namespace Basics;
 public class Person
 {
     public String firstName;
     public String lastName;
 
 
-    public static void IntroducePersonMethod()
+    public static void PersonProperty()
     {
-        Console.WriteLine("***** Person.IntroducePersonMethod *****\n");
+        Console.WriteLine("***** PersonProperty *****\n");
         var aMan = new Person();
         aMan.firstName = "aMan called Jonatan";
         aMan.lastName = "med etternavnet Smith";

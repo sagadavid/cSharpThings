@@ -1,4 +1,4 @@
-namespace BasicPractices;
+namespace Basics;
 
 public class Randomize
 {

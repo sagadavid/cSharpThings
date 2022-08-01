@@ -1,4 +1,4 @@
-namespace BasicPractices;
+namespace Basics;
 
 public class Conversion
 {
@@ -56,7 +56,7 @@ Console.WriteLine(bye);//210
 // Unhandled exception. System.OverflowException: Value was either too large or too small for an unsigned byte.
 //     at System.Convert.ThrowByteOverflowException()
 // at System.Convert.ToByte(Int32 value)
-// at Program.<Main>$(String[] args) in /Users/bethsaga/RiderProjects/BasicPractices/BasicPractices/Program.cs:line 91
+// at Program.<Main>$(String[] args) in /Users/bethsaga/RiderProjects/Basics/Basics/Program.cs:line 91
 
 //TO AVOID OVERFLOWING USE CHECKED
 // checked {

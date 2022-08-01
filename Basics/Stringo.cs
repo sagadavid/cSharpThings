@@ -1,4 +1,4 @@
-namespace BasicPractices;
+namespace Basics;
 
 public class Stringo
 {
@@ -20,6 +20,8 @@ public class Stringo
 
         int[] numbs = { 1, 45, 56, 23, 78, 45 };
         Console.WriteLine(string.Join(" # ",numbs));
+        
+        Console.WriteLine("hexadecimal a : "+"\u0061");//a
 
 
     }
