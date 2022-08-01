@@ -1,6 +1,6 @@
 namespace Basics;
 
-public class Randomize
+public class RandomSpeech
 {
     public static void RandomizeMethod()
     {

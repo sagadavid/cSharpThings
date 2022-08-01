@@ -1,6 +1,6 @@
 namespace Basics;
 
-public class Conversion
+public class Konvert
 {
     public static void ConversionMethod ()
     {

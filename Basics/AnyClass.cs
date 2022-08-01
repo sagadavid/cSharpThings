@@ -3,18 +3,17 @@ using System.Threading.Channels;
 namespace Basics;
 public class Person
 {
-    public String firstName;
-    public String lastName;
-
+     string firstName;
+   string lastName;
 
     public static void PersonProperty()
     {
         Console.WriteLine("***** PersonProperty *****\n");
-        var aMan = new Person();
-        aMan.firstName = "aMan called Jonatan";
-        aMan.lastName = "med etternavnet Smith";
+        var aPerson = new Person();
+        aPerson.firstName = "aMan called Jonatan";
+        aPerson.lastName = "med etternavnet Smith";
             
-        Console.WriteLine(aMan.firstName + " is a member of The Family " + aMan.lastName);
+        Console.WriteLine(aPerson.firstName + " is a member of The Family " + aPerson.lastName);
     }
     
 }
