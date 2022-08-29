@@ -2,7 +2,7 @@ namespace Basics;
 
 public class Konvert
 {
-    public static void ConversionMethod ()
+    public static void Maintain ()
     {
         Console.WriteLine("**  CONVERSION-CLASS-METHOD **** \n");
         //CONVERSION, COMPILABLE, COMPATIBLE TYPES

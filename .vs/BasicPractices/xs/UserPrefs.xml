@@ -1,18 +1,22 @@
 ﻿<Properties StartupConfiguration="{09A85CA1-32F2-488A-82C8-FCAF1BD744FE}|Default">
   <MonoDevelop.Ide.ItemProperties.BasicPractices PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="BasicPractices/Program.cs">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Basics PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Basics/Konvert.cs">
     <Files>
-      <File FileName="BasicPractices/Program.cs" Line="10" Column="1" />
-      <File FileName="BasicPractices/Person.cs" Line="1" Column="1" />
+      <File FileName="Basics/ArrayWorks.cs" Line="11" Column="24" />
+      <File FileName="Basics/Program.cs" Line="2" Column="1" />
+      <File FileName="Basics/Konvert.cs" Line="1" Column="18" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="BasicPractices" expanded="True">
-            <Node name="BasicPractices" expanded="True" />
+            <Node name="Basics" expanded="True" selected="True">
+              <Node name="Dependencies" expanded="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
@@ -21,7 +25,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

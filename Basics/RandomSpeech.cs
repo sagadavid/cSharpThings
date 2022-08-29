@@ -2,7 +2,7 @@ namespace Basics;
 
 public class RandomSpeech
 {
-    public static void RandomizeMethod()
+    public static void Maintain()
     {
         Console.WriteLine("** RANDOMIZE-CLASS-METHOD ****\n");
         //RANDOM PHRASE-MATIC FROM JAVA
