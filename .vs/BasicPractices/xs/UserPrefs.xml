@@ -1,7 +1,8 @@
-﻿<Properties StartupConfiguration="{09A85CA1-32F2-488A-82C8-FCAF1BD744FE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Basics/Program.cs">
+﻿<Properties StartupConfiguration="{09A85CA1-32F2-488A-82C8-FCAF1BD744FE}|Default" GitUserInfo="UsingGIT">
+  <MonoDevelop.Ide.ItemProperties.Basics PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Basics/AllClasses.cs">
     <Files>
-      <File FileName="Basics/Program.cs" Line="32" Column="49" IsPinned="True" />
+      <File FileName="Basics/Program.cs" Line="74" Column="29" IsPinned="True" />
       <File FileName="Basics/AllClasses.cs" Line="28" Column="1" IsPinned="True" />
     </Files>
     <Pads>
@@ -10,19 +11,18 @@
           <Node name="BasicPractices" expanded="True">
             <Node name="Basics" expanded="True">
               <Node name="Dependencies" expanded="True" />
-              <Node name="Program.cs" selected="True" />
+              <Node name="AllClasses.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.BasicPractices PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.Basics PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.BasicPractices PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>
