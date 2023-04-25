@@ -12,7 +12,7 @@ using Basics;
 ////////////////////////////////////////////////////////////////////////////////////
 
 //STRUCTS lecture 1
-Console.WriteLine("lecture 1 *********");
+Console.WriteLine("lecture 01 *********");
 aStruct comeOnStruckt = new aStruct { };
 comeOnStruckt.fieldA = 8;
 comeOnStruckt.fieldB = 78;
