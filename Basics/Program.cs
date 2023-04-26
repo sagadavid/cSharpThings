@@ -9,121 +9,51 @@ using Basics;
 //    klass++;
 //}
 
-////////////////////////////////////////////////////////////////////////////////////
-
-//STRUCTS lecture 1
-Console.WriteLine("lecture 01 *********");
-aStruct comeOnStruckt = new aStruct { };
-comeOnStruckt.fieldA = 8;
-comeOnStruckt.fieldB = 78;
-
-aClass comeOnClass = new aClass { };
-comeOnClass.fieldA = 234;
-comeOnClass.fieldB = 45;
-
-ConstructorDisplayer constDisp = new();
-
-//we can use these structs without calling a constructor.!!!! (like a value type variable)
-
-//In this case, the structs are initialized to default values by
-//zeroing out their memory, meaning A and B of both _one and _two
-//will be 0 until somebody changes it.
-
-//No matter what constructors you give a struct,
-//they may simply not be called!
-constDisp.DisplayStructConstructors(); //0 0 and 0 
-
-
-// STRUCTS lecture 2
-Console.WriteLine("lecture 2 ********");
-for (int number = 0; number < 2; number++)
-{
-    //there is one variable designed to hold a single CircleStruct,
-    //and because it is a local variable, it lives on the stack.(***look self check below)
-    //That variable is big enough to contain an entire CircleStruct,
-    //with 8 bytes for X, Y, and Radius for a total of 24 bytes.
-    //Every time we get to that new CircleStruct(...) part,
-    //we re-initialize that memory location with new data.
-    //But we reuse the memory location.
-    SirkelStruct sirkelStrukt = new SirkelStruct(0, 0, 10);
-    Console.WriteLine($"X={sirkelStrukt.X} Y = {sirkelStrukt.Y} Radius={sirkelStrukt.Radius}");
-    //Process finished with exit code 0.
-}
-
-for (int number = 0; number < 2; number++)
-{
-    //we still have a single variable on the stack,
-    //but that variable is a reference type and will only hold references.
-    //This variable will be only 8 bytes (on a 64-bit computer). However,
-    //each time we run new CircleClass(...),
-    //a new CircleClass object is allocated on the heap.
-    //By the time we finish, we will have done that 2  times and used 48 bytes,
-    //(original exercise was 10000 times and 240000bytes)
-    //and the garbage collector will need to clean them all up.
-    SirkelClass sirkelKlass = new SirkelClass(0, 0, 10);
-
-    Console.WriteLine($"X={sirkelKlass.X} Y = {sirkelKlass.Y} Radius={sirkelKlass.Radius}");
-    //Process finished with exit code 0.
-}
-
-//self check
-
-SirkelClass sirkelA = new SirkelClass(0, 0, 0);
-sirkelA.Radius = 1;
-Console.WriteLine(sirkelA.Radius);
-SirkelClass sirkelB = new SirkelClass(0, 0, 2);//is already defined error
-Console.WriteLine(sirkelB.Radius);
-
-SirkelStruct sirkelC = new SirkelStruct();
-sirkelC.Radius = 3;
-Console.WriteLine(sirkelC.Radius);
-SirkelStruct sirkelD = new SirkelStruct();//is already defined error
-sirkelD.Radius = 4;
-Console.WriteLine(sirkelD.Radius);
 
 
 ////////////////////////////////////////////////////////////////////////////////////
-//////CLASS EXERCISES
-////this.constructor.
-////name by constuctor
-//Score eva = new Score("eva", 23, 12, "green");
-//Console.WriteLine("name by constructor/object: " + eva._name);
-//var nyScore = new Score();
-//Console.WriteLine("name by constructor/object: " + nyScore._name);
 
-//// //set-get by property (not method)
-//// nyScore.SetName = "theodore";
-//// Console.WriteLine("nyScore.GetName: " + nyScore.GetName);
+////CLASS EXERCISES
+//this.constructor.
+//name by constuctor
+Score eva = new Score("eva", 23, 12, "green");
+Console.WriteLine("name by constructor/object: " + eva._name);
+var nyScore = new Score();
+Console.WriteLine("name by constructor/object: " + nyScore._name);
 
-////(3)
-////property according to auto implementation
-//nyScore.Naming = "auto setted name";
-//Console.WriteLine("nyscore.naming: " + nyScore.Naming);
-////could set a name !
+// //set-get by property (not method)
+// nyScore.SetName = "theodore";
+// Console.WriteLine("nyScore.GetName: " + nyScore.GetName);
 
-////(4)
-//// Score initScore = new Score("initNamePropertyWhileObjectInitiated", 23, 1, "colorful");
-//// Console.WriteLine("******* "+initScore.Naming);
-//// //couldnt set a name ! but it should while object initialization !
+//(3)
+//property according to auto implementation
+nyScore.Naming = "auto setted name";
+Console.WriteLine("nyscore.naming: " + nyScore.Naming);
+//could set a name !
+
+//(4)
+// Score initScore = new Score("initNamePropertyWhileObjectInitiated", 23, 1, "colorful");
+// Console.WriteLine("******* "+initScore.Naming);
+// //couldnt set a name ! but it should while object initialization !
 
 
-////new alone constructor (if compiler can infer the class)
-////like var !!!
-//Score scoreObject = new();
+//new alone constructor (if compiler can infer the class)
+//like var !!!
+Score scoreObject = new();
 
-//Console.WriteLine("name by new alone constructor: " + scoreObject._name);
+Console.WriteLine("name by new alone constructor: " + scoreObject._name);
 
-//Score scorObject2 = new("eli", 2, 3, "readOnlyColor");
-//Console.WriteLine("name by constructor/object creation: " + scorObject2._name);
+Score scorObject2 = new("eli", 2, 3, "readOnlyColor");
+Console.WriteLine("name by constructor/object creation: " + scorObject2._name);
 
-//// scorObject2._color = "yellow";//read only error
+// scorObject2._color = "yellow";//read only error
 
-//Console.WriteLine(Score.FinalScore);
+Console.WriteLine(Score.FinalScore);
 
-//Score.Report(scorObject2);
+Score.Report(scorObject2);
 
-//Score factorizedScore = Score.MakeAScore();
-//Score.Report(factorizedScore);
+Score factorizedScore = Score.MakeAScore();
+Score.Report(factorizedScore);
 
 ////////////////////////////////////////////////////////////////////////////////////
 

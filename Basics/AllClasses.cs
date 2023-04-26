@@ -16,31 +16,37 @@ namespace Basics
 
     public struct aStruct
     {
-        public int fieldA;
-        public int fieldB;
+        public int structFieldA;
+        public int strucktFieldB;
     }
 
     public class aClass
     {
-        public int fieldA;
-        public int fieldB;
+        public int classFieldA;
+        public int classFieldB;
     }
 
     public class ConstructorDisplayer
     {
         public aStruct _one;
-        public aStruct _two;
+        //public aStruct _two;
         public aClass _three;
-        public aClass _four;
+        //public aClass _four;
 
         public void DisplayStructConstructors()
         {
-            Console.WriteLine($"{_one.fieldA} {_one.fieldB} and {_two.fieldA} {_two.fieldB}");
+            Console.WriteLine
+                ($"{_one.structFieldA} {_one.strucktFieldB} " //+
+                //$"and {_two.structFieldA} {_two.strucktFieldB}"
+                );
         }
 
         public void DisplayClassConstructors()
         {
-            Console.WriteLine($"{_three.fieldA} {_three.fieldB} and {_four.fieldA} {_four.fieldB}");
+            Console.WriteLine
+                ($"{_three.classFieldA} {_three.classFieldB} " //+
+                //$"and {_four.classFieldA} {_four.classFieldB}"
+                );
         }
     }
 
